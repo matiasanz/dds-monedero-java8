@@ -22,8 +22,9 @@ public class Cuenta {
     saldo = montoInicial;
   }
 
-  public void setMovimientos(List<Movimiento> movimientos) {
-    this.movimientos = movimientos;
+  //Bad smell de pisar lista anterior con una nueva lista
+  public void agregarMovimiento(Movimiento unMovimiento) {
+    movimientos.add(unMovimiento);
   }
 
   public void poner(double cuanto) {
