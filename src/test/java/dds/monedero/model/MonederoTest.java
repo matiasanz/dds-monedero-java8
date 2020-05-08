@@ -3,17 +3,17 @@ package dds.monedero.model;
 import org.junit.Before;
 import org.junit.Test;
 
-import dds.monedero.exceptions.MaximaCantidadDepositosException;
-import dds.monedero.exceptions.MaximoExtraccionDiarioException;
-import dds.monedero.exceptions.MontoNegativoException;
-import dds.monedero.exceptions.SaldoMenorException;
+import dds.monedero.model.exceptions.MaximaCantidadDepositosException;
+import dds.monedero.model.exceptions.MaximoExtraccionDiarioException;
+import dds.monedero.model.exceptions.MontoNegativoException;
+import dds.monedero.model.exceptions.SaldoMenorException;
 
 public class MonederoTest {
   private Cuenta cuenta;
 
   @Before
   public void init() {
-    cuenta = new Cuenta();
+    cuenta = new Cuenta(0);
   }
 
   @Test
