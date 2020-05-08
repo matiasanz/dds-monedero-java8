@@ -22,6 +22,14 @@ public class Cuenta {
     saldo = montoInicial;
   }
 
+<<<<<<< HEAD
+=======
+  //Bad smell de pisar lista anterior con una nueva lista
+  public void agregarMovimiento(Movimiento unMovimiento) {
+    movimientos.add(unMovimiento);
+  }
+
+>>>>>>> 1e9dffe45bc697d5aaea68977f9ecaa1b07c9c1e
   public void poner(double cuanto) {
     if (cuanto <= 0) {
       throw new MontoNegativoException(cuanto + ": el monto a ingresar debe ser un valor positivo");
